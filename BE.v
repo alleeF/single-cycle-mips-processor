@@ -52,6 +52,23 @@ module BE #(parameter DATA_WIDTH = 8) (
 	 
 	); 
 	
+	// blocul de registri
+	FR #(
+        .DATA_WIDTH(DATA_WIDTH)
+    ) FR (
+	
+	.we  ( wR ),
+	.d   ( tmpD ),
+	.aRW ( tmpAW ),
+	.aRA ( instructiune[11:9] ),
+	.aRB ( instructiune[8:6] ),
+	.rst ( rst ),
+	.clk ( clk ),
+	.qA  ( tmpQA ),
+	.qB  ( tmpQB )
+	
+	);
+	
 	// extensie zero / semn pentru imediat
 	ext #(
         .DATA_WIDTH(DATA_WIDTH)
@@ -76,6 +93,27 @@ module BE #(parameter DATA_WIDTH = 8) (
 	.dOut ( tmpB )
 	
 	);
+	
+	// unitatea aritmetico-logica
+	UAL #(
+        .DATA_WIDTH(DATA_WIDTH)
+    ) UAL (
+	
+	.A     ( tmpQA ),
+	.B     ( tmpB ),
+	.opUAL ( opUAL ),
+	.F     ( tmpUAL ),
+	.CO    ( co ),
+	.OV    ( ov ),
+	.Z     ( z )
+	
+	);
+
+	assign dOutR    = tmpQB;
+	assign eticheta = tmpU;
+	assign outUAL   = tmpUAL;
+
+endmodule
 	
 module muxAW ( 
 	
