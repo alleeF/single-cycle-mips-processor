@@ -114,7 +114,7 @@ module ual1b
 	); 	   
 	
 	// selectie operatie finala
-	mux4 U1(
+	mux4_1b U1(
 	    .sel (selOp),
 	    .dIn3(set),
 	    .dIn2(tmpAddSub),
@@ -130,3 +130,39 @@ module ual1b
 	assign sgn       = tmpAddSub;
 	
 endmodule
+
+module add1b
+	(
+	    input  a,
+	    input  b,
+	    input  ci,
+	    output s,
+	    output co
+	);	 
+	
+  	assign {co, s} = a + b + ci; 
+  
+endmodule
+
+module mux4_1b (
+  input  [1:0] sel,
+  input        dIn0,
+  input        dIn1,
+  input        dIn2,
+  input        dIn3,
+  output reg   dOut
+);
+
+always @(*) begin
+  case (sel)
+    2'b00: dOut = dIn0;
+    2'b01: dOut = dIn1;
+    2'b10: dOut = dIn2;
+    2'b11: dOut = dIn3;
+    default: dOut = 1'b0;
+  endcase
+end
+
+endmodule
+
+
