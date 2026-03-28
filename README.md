@@ -22,7 +22,7 @@ The processor supports:
 - BE.v – execution block
 - BCA.v – address calculation
 - FR.v – register file
-- UAL.v – ALU
+- UAL.v – arithmetic logic unit
 - MI.v – instruction memory
 - MD.v – data memory
 
