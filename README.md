@@ -28,7 +28,7 @@ The processor supports:
 
 ## Example Simulation Waveform
 
-  <img width="1892" height="393" alt="image" src="https://github.com/user-attachments/assets/743ca05a-7568-44b6-b6d4-196c19c983c5" />
+<img width="1725" height="409" alt="image" src="https://github.com/user-attachments/assets/b1861107-e8dc-487e-85c6-f21363177ba2" />
 
 ## Explanation
 It can be observed that:
