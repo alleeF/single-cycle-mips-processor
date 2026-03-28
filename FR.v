@@ -58,20 +58,20 @@ module FR #(
         end
     endgenerate
 
-    // =======================================================
+   
     // CITIRE REGISTRI (2 porturi)
-    // =======================================================
+   
     assign qA = tmpQ[aRA]; // citire registru A
     assign qB = tmpQ[aRB]; // citire registru B
 
 endmodule
 
 
-// =======================================================
+
 // DEMUX generic
 // - transforma un semnal dIn intr-un vector one-hot
 // - doar un bit din dOut va fi 1 (cel selectat)
-// =======================================================
+
 
 module dmuxN #(
     parameter N = 8,           // numar iesiri
@@ -89,11 +89,10 @@ module dmuxN #(
 endmodule
 
 
-// =======================================================
+
 // rppN = registru parametrizabil
 // - scriere conditionata de ld
 // - reset sincron
-// =======================================================
 
 module rppN #(
     parameter DATA_WIDTH = 8
