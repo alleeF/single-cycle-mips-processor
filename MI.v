@@ -67,30 +67,30 @@ reg [INSTR_WIDTH-1:0] mem_content;
 
 always @(*) begin
     case (addr)
-        ADDR_WIDTH'd0:  mem_content = I_0;
-        ADDR_WIDTH'd1:  mem_content = I_1;
-        ADDR_WIDTH'd2:  mem_content = I_2;
-        ADDR_WIDTH'd3:  mem_content = I_3;
-        ADDR_WIDTH'd4:  mem_content = I_4;
-        ADDR_WIDTH'd5:  mem_content = I_5;
-        ADDR_WIDTH'd6:  mem_content = I_6;
-        ADDR_WIDTH'd7:  mem_content = I_7;
-        ADDR_WIDTH'd8:  mem_content = I_8;
-        ADDR_WIDTH'd9:  mem_content = I_9;
-        ADDR_WIDTH'd10: mem_content = I_10;
-        ADDR_WIDTH'd11: mem_content = I_11;
-        ADDR_WIDTH'd12: mem_content = I_12;
-        ADDR_WIDTH'd13: mem_content = I_13;
-        ADDR_WIDTH'd14: mem_content = I_14;
-        ADDR_WIDTH'd15: mem_content = I_15;
-        ADDR_WIDTH'd16: mem_content = I_16;
-        ADDR_WIDTH'd17: mem_content = I_17;
-        ADDR_WIDTH'd18: mem_content = I_18;
-        ADDR_WIDTH'd19: mem_content = I_19;
-        ADDR_WIDTH'd20: mem_content = I_20;
-        ADDR_WIDTH'd21: mem_content = I_21;
-        ADDR_WIDTH'd22: mem_content = I_22;
-        default:        mem_content = {INSTR_WIDTH{1'b0}};
+        0  : mem_content = I_0;
+        1  : mem_content = I_1;
+        2  : mem_content = I_2;
+        3  : mem_content = I_3;
+        4  : mem_content = I_4;
+        5  : mem_content = I_5;
+        6  : mem_content = I_6;
+        7  : mem_content = I_7;
+        8  : mem_content = I_8;
+        9  : mem_content = I_9;
+        10 : mem_content = I_10;
+        11 : mem_content = I_11;
+        12 : mem_content = I_12;
+        13 : mem_content = I_13;
+        14 : mem_content = I_14;
+        15 : mem_content = I_15;
+        16 : mem_content = I_16;
+        17 : mem_content = I_17;
+        18 : mem_content = I_18;
+        19 : mem_content = I_19;
+        20 : mem_content = I_20;
+        21 : mem_content = I_21;
+        22 : mem_content = I_22;
+        default: mem_content = {INSTR_WIDTH{1'b0}};
     endcase
 end
 
