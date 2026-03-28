@@ -39,4 +39,22 @@ It can be observed that:
 
 These results confirm the correct behavior of the processor in simulation.
 
+The waveform below shows the final stage of program execution.
+
+At instruction address **21**, the processor executes the `SW` instruction used to store the computed result into data memory.
+
+Key signals:
+- **outUAL = 10** → target memory address
+- **dOutR = 30** → value written to memory
+- **wMD = 1** → memory write enabled
+
+This confirms that the processor correctly stores the final result:
+
+**MD[10] = 30**
+
+After that, the processor executes a jump to itself (`J 22`), entering the final infinite loop.
+
+<img width="1896" height="466" alt="image" src="https://github.com/user-attachments/assets/1bddd448-d36a-4dc2-a810-0e0404dfe00d" />
+
+
 
