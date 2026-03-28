@@ -1,4 +1,3 @@
-# single-cycle-mips-processor
 # Single-Cycle MIPS Processor
 
 Implementation of a single-cycle MIPS processor in Verilog.
