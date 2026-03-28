@@ -4,7 +4,6 @@ Implementation of a single-cycle MIPS processor in Verilog.
 
 ## Overview
 
-This project implements a simplified MIPS-like processor in Verilog HDL.  
 The design was developed for educational purposes and includes the main architectural blocks required for instruction execution, memory access, arithmetic operations, and control. The processor follows a Harvard-style architecture, using separate instruction and data memories.
 
 The processor supports:
