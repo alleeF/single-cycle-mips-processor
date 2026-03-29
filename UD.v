@@ -27,9 +27,7 @@ module UD #(
 
     // instantierea Blocului de Executie
     BE #(
-        .INSTR_WIDTH(INSTR_WIDTH),
-        .DATA_WIDTH (DATA_WIDTH),
-        .ADDR_WIDTH (ADDR_WIDTH)
+        .DATA_WIDTH (DATA_WIDTH)
     ) BE (
         .clk         (clk),
         .rst         (rst),
