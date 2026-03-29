@@ -31,7 +31,8 @@ The processor supports:
 The processor follows a Harvard-style architecture, using separate instruction and data memories.  
 The top-level design integrates the control unit, datapath, instruction memory, and data memory.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b1caf384-ae0b-44c9-bd79-05167ecbb0f5" />
+<img width="1922" height="1028" alt="image" src="https://github.com/user-attachments/assets/4500ffd7-6652-4aec-8e7d-ca7c0c53e99a" />
+
 
 
 ## Example Simulation Waveform
