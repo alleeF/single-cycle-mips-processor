@@ -4,7 +4,7 @@ Implementation of a single-cycle MIPS processor in Verilog.
 
 ## Overview
 
-The design was developed for educational purposes and includes the main architectural blocks required for instruction execution, memory access, arithmetic operations, and control. The processor follows a Harvard-style architecture, using separate instruction and data memories.
+The design was developed for educational purposes and includes the main architectural blocks required for instruction execution, memory access, arithmetic operations, and control.
 
 The processor supports:
 - R-type instructions
@@ -25,6 +25,14 @@ The processor supports:
 - UAL.v – arithmetic logic unit
 - MI.v – instruction memory
 - MD.v – data memory
+
+## Architecture
+
+The processor follows a Harvard-style architecture, using separate instruction and data memories.  
+The top-level design integrates the control unit, datapath, instruction memory, and data memory.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b1caf384-ae0b-44c9-bd79-05167ecbb0f5" />
+
 
 ## Example Simulation Waveform
 
