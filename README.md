@@ -34,6 +34,13 @@ The top-level design integrates the control unit, datapath, instruction memory, 
 <img width="1922" height="1028" alt="image" src="https://github.com/user-attachments/assets/4500ffd7-6652-4aec-8e7d-ca7c0c53e99a" />
 
 
+## Datapath
+
+
+<img width="1393" height="504" alt="image" src="https://github.com/user-attachments/assets/6a14340e-5921-46ea-b482-0753125c9727" />
+
+
+
 
 ## Example Simulation Waveform
 
